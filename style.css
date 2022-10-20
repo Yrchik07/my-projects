@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.header{
+    position: relative;/* определяет что он родитель */
+    /* определяем модель flex-box для блока .header */
+    display: flex;
+    flex-direction: column;/* выстраиваем flex -элементы в колонку, основная ось -Y */
+    justify-content: center;/* выравниваем по основной оси */
+    align-items: center;/* выравниваем по поперечной оси */
+
+    width: 100%;
+    height: 100vh;
+
+    /* background-color: #14D100; */
+    background-image: url(../img/header/header_bg.jpg);/* фоновое изображение */
+    background-size: cover; /* размер фонового изображения  cover - заполнение весь блок*/
+    background-position: center;/* позиция изображения */
+}
+
+.header_title {
+    margin: 0;
+    margin-bottom: 25px;
+    font-weight: 700;/* толшина шрифта */
+    font-size: 56px;/* размер шрифта */
+    line-height: 130%;/* высота строки 1.3 * 56 = 72.8*/
+    text-align: center;/* выравнивание текста по центру */
+    color: #FFFFFF;/* цвет текста */
+}
+
+.header_subtitle {
+    margin: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.2em;/* растояние между буквами */
+    text-transform: uppercase;/* верхний регистр */
+    color: #FFFFFF;
+}
+
+.header-arrow{
+    width: 48px;
+    height: 48px;
+    position: absolute;/* абсолютное позиционирование по отношению к родителю */
+    bottom: 30px;/* отступ с низу  */
+    left: 50%;/* смешение  */
+    transform: translate(-50%, 0);/* смешение по х и у */
+}
