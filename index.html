@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./media.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Сайт портфолио</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <h1 class="header_title">Юрий Кокшаров</h1>
         <p class="header_subtitle">фрилансер, веб-разработчик,<!-- <br>  -->создание сайтов</p>
-       <div class="header-arrow">
+       <a href="#portfolio" class="header-arrow">
         <img src="./img/header/arrow.svg" alt="arrow">
-       </div>
+       </a>
     </header>
       
     <main>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="container">
                 <h2 class="portfolio-header">Портфолио</h2>
 
@@ -125,5 +125,11 @@
         </div>
     </footer>
 
+    <!-- библиотеки и плагины -->
+    <script src="./libs/jquery/jquery-3.6.1.min.js"></script>
+    <script src="./libs/vide/jquery.vide.min.js"></script>
+
+    <!-- собственые скрепты и вызовы библиотек -->
+    <script src="./js/main.js"></script>
 </body>
 </html>
