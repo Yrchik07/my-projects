@@ -6,11 +6,17 @@ body{
     font-family: 'Montserrat', sans-serif;
     color: #000000;
 }
+
+img{
+    max-width: 100%;/* привязывает изображение к карточке */
+}
 .container{
-    max-width: 1110px;
+    max-width: 1140px;
     /* автоматическое выравнивание по центру */
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .none{
